@@ -1,0 +1,13 @@
+body { background: #222; }
+div { 
+  max-width: 1200px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/smoke-boy.jpg), linear-gradient(#00f,#f00); 
+  background-size: cover, 100% 100%;
+  padding-top: 56.44%;
+  background-position: 0 0, -1200px 0px;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  transition: 3s background-position linear;
+  margin: 0 auto;
+}
+div:hover { background-position: 0 0, 0 0; }

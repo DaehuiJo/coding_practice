@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.blend{
+			height: 400px;
+			border: 1px solid white;
+			background-color: chartreuse;
+			background-image: url(images/anime-wallpaper-1.png);
+			background-size: cover;
+/*			background-blend-mode: darken;*/
+			background-blend-mode: difference;
+			opacity: 0.9;
+			transition:background-color 2s;
+		}
+		.blend:hover{
+			background-color: black;
+			transition:background-color 2s;
+		}
+	</style>
+</head>
+<body>
+	<div class="blend">
+		
+	</div>
+</body>
+</html>

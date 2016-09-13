@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    table, th, tr, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th{
+      background-color: lightgray;
+    }
+    td{
+      padding: 3px;
+      text-align: center;
+    }
+    #table2{
+      width:40%;
+      background-color: #f1f1c1;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <table style="width:40%">
+    <caption>Member Sheet #1</caption>
+    <thead>
+    <!-- <tr style="color:gold; font-family:verdana; font-size:150%; text-align:center;"> -->
+      <tr> <!--tr:Tabel Row -->
+        <th>이름</th> <!-- td:Tabel Data -->
+        <th>성별</th>
+        <th>주소</th>
+        <th>회비</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>최진혁</td>
+      <td>남</td>
+      <td rowspan="2">청주</td> <!-- rowsapn: 행 병합 -->
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>최유빈</td>
+      <td>여</td>
+      <td>500</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <td colspan="3">합계</td> <!-- colspan: 열 병합 -->
+    <td>1500</td>
+  </tfoot>
+</table><br><br>
+
+  <table id="table2">
+    <caption>Member Sheet #2</caption>
+    <thead>
+    <!-- <tr style="color:gold; font-family:verdana; font-size:150%; text-align:center;"> -->
+      <tr> <!--tr:Tabel Row -->
+        <th>이름</th> <!-- td:Tabel Data -->
+        <th>성별</th>
+        <th>주소</th>
+        <th>회비</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>최진혁</td>
+      <td>남</td>
+      <td rowspan="2">청주</td> <!-- rowsapn: 행 병합 -->
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>최유빈</td>
+      <td>여</td>
+      <td>500</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <td colspan="3">합계</td> <!-- colspan: 열 병합 -->
+    <td>1500</td>
+  </tfoot>
+  </table>
+
+</body>
+</html>

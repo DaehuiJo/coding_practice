@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>
+    HTML Element Background Blending Gallery
+  </title>
+  <link rel="stylesheet" href="blend_04.css">
+  <script type="text/javascript" src="blend_04.js"></script>
+</head>
+<body onload="load()">
+  <div id="title">CSS Background Blending Modes</div>
+  <div id="header">
+    <label>Blend Mode: </label>
+    <select id="blendModesList">
+      <option value="normal">normal</option>
+      <option value="multiply">multiply</option>
+      <option value="screen">screen</option>
+      <option value="overlay">overlay</option>
+      <option value="darken">darken</option>
+      <option value="lighten">lighten</option>
+      <option value="color-dodge">color-dodge</option>
+      <option value="color-burn">color-burn</option>
+      <option value="hard-light">hard-light</option>
+      <option value="soft-light">soft-light</option>
+      <option value="difference">difference</option>
+      <option value="exclusion">exclusion</option>
+      <option value="hue">hue</option>
+      <option value="saturation">saturation</option>
+      <option value="color">color</option>
+      <option value="luminosity">luminosity</option>
+    </select>
+    <label>Background color: </label>
+    <input id="backgroundColorPicker" type="color" value='#4499f0'>
+    <label>Background image: </label>
+    <select id="backgroundImageList">
+      <option value="http://farm6.staticflickr.com/5328/8959572482_2601c86c04_c.jpg">Waterfall</option>
+      <option value="http://farm4.staticflickr.com/3694/8959572838_57fa40bdb4_c.jpg">Seaside</option>
+      <option value="http://farm9.staticflickr.com/8266/8959572616_c47c510060_c.jpg">Sunset</option>
+      <option value="http://farm8.staticflickr.com/7371/8958376607_b8c6586c4b_c.jpg">Bridge</option>
+      <option value="http://farm8.staticflickr.com/7403/8958376269_d8b658fc2c_c.jpg">Mountains</option>
+    </select>
+  </div>
+  <div id="wrapper"></div>
+</body>
+</html>
