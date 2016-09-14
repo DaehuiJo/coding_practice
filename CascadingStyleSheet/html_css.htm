@@ -4,13 +4,50 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <style>
-    h2{
-      color:tomato;
-    }
+      h2{
+      	color:tomato;
+	  	border-bottom: 1px solid gray;
+   	  }
+	  body>nav>h4{
+		text-align: left;
+		margin-left: 10px;
+	  }
+	  .list{
+		  list-style: none;
+	  }
+	  body>nav>ul>li a{
+		  text-decoration: none;
+		  color: powderblue;
+	  }
+	  #a{
+		  color: coral;
+	  }
+	  .article{
+		color: burlywood;
+		border: 1px solid gray;
+	  }
+	  .article>h4{
+		  color: black;
+	  }
   </style>
 </head>
 <body>
-  <h1 style="color:PowderBlue">hello world</h1>
-  <h2>hello world</h2>
+ 	<header>
+ 		<h1 style="color:PowderBlue">hello world</h1>
+  		<h2>hello world.</h2>
+ 	</header>
+ 	<nav>
+ 		<h4>list(nav)</h4>
+ 		<ul class="list">
+ 			<li><a href="#" id="a">a</a></li>
+ 			<li><a href="#">b</a></li>
+ 			<li><a href="#">c</a></li>
+ 			<li><a href="#">d</a></li>
+ 		</ul>
+ 	</nav>
+ 	<article class="article">
+ 		<h4>article</h4>
+ 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis sed in nam odit maxime vero porro deserunt excepturi sapiente tempore perspiciatis voluptas officia quasi accusamus placeat ullam ex, nulla eveniet cupiditate autem molestias, veniam quam et. Officia, dolore, ipsum.</p>
+ 	</article>
 </body>
 </html>
