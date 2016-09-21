@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="font-awesome-4.6.3\css\font-awesome.min.css">
+	<style>
+		.tree, .tree ul{
+			list-style: none;
+			padding-left: 15px;
+		}
+		.tree input[type="checkbox"]{
+			display: none;
+			
+		}
+		/* 속성선택자 [] 및 속성선택자의 상태선택*/
+		/* 체크박스가 체크된 이후에 표기한 테그 => ul를 나타냄 */
+		.tree input[type="checkbox"]:checked~ul{
+			display: none;
+			
+		}
+		.tree a:before{
+			content:"\f08e";
+		}
+	</style>
+</head>
+<body>
+	
+	<ul class="tree">
+		<li>
+			<input type="checkbox" id="root">
+			<label for="root">Root</label>
+			<ul>
+				<li><a href="#">node1</a></li>
+				<li><a href="#">node2</a></li>
+				<li>
+					<input type="checkbox" id="node3">
+					<label for="node3"><a href="#">anode3</a></label>
+					<ul>
+						<li><a href="#">node3_1</a></li>
+						<li><a href="#">node3_2</a></li>
+						<li><a href="#">node3_3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	
+</body>
+</html>
